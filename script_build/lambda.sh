@@ -18,6 +18,7 @@ aws --endpoint-url=http://localhost:4566 lambda create-function \
 --role arn:aws:iam::000000000000:role/lambda-role-exec
 # echo 'criou a lambda'
 
-aws --endpoint-url=http://localhost:4566 lambda update-function-code \
+aws --endpoint-url=http://localhost:4566 lambda \
+    update-function-code \
     --function-name  lambda-api-gateway \
     --zip-file fileb://api-gateway-lambda.zip
